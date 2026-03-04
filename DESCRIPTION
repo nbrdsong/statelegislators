@@ -1,0 +1,20 @@
+Package: statelegislators
+Title: Extract State Legislator Names from Messy Text
+Version: 0.0.0.9000
+Authors@R: 
+    person("Nicholas", "Birdsong", , "github@nicholasbirdsong.com", role = c("aut", "cre"))
+Description: Provides tools and curated lookup tables to identify U.S. state legislators mentioned in messy text sources using regular-expression matching constrained by state, year, and chamber, with support for flagging ambiguous name matches.License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    data.table,
+    stringi,
+    utils
+Depends: 
+    R (>= 3.5)
+LazyData: true
+License: MIT + file LICENSE
