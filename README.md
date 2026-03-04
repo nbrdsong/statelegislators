@@ -26,7 +26,7 @@
 This package uses legislator metadata derived from:
 
 - Klarner, Carl. 2018. *State Legislative Election Returns, 1967-2016*.
-- LegiScan, state legislative records, 2016 onward.
+- LegiScan
 - Bucchianeri, Peter; Volden, Craig; Wiseman, Alan E. 2024. "Replication Data for: Legislative Effectiveness in the American States". [Harvard Dataverse](https://doi.org/10.7910/DVN/NT7H5O)
 - Manual cleaning and additions where missing data or errors were detected.
 
