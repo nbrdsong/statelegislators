@@ -81,12 +81,17 @@ Each row includes:
 
 ## Custom Options
 
-- **Last-name-only matching**:  
-  Set `allow_last_name = TRUE` to match last names even without first names present (may increase ambiguity).
+- **`state_abbrev`**: Two-letter state abbreviation (e.g., `"MI"`). *Required*. Limits the search to legislators from a specific state.
 
-```r
-results <- extractStLegName(text, state_abbrev = "MI", year = 2023, allow_last_name = TRUE)
-```
+- **`year`**: Year of legislative session. *Optional*. Restricts matching to legislators active in a particular year.
+
+- **`year_window`**: Integer. Includes legislators active from `year - year_window` to `year + year_window`. Default is 3. Useful if the exact document year is uncertain or for capturing legislators who served around the target date.
+
+- **`chamber`**: `"House"`, `"Senate"`, or `"Both"`. *Optional*. Limits matches to the chosen chamber (helps avoid false positives when a name appears in both chambers).
+
+- **`allow_last_name`**: Logical. If `TRUE`, allows matching based on last name only (may increase recall but can lead to false positives and more ambiguous matches). Default is `FALSE`.
+
+- **`people`**, **`terms`**: Custom lookup tables for users who want to supply alternative legislator datasets (default: package-shipped lookup tables).
 
 ---
 
