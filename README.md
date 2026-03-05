@@ -1,22 +1,23 @@
 # statelegislators
 
-**Extract State Legislator Names from Messy Text**
+**Extract State Legislator Names from Text**
 
 ---
 
 ## Overview
 
-`statelegislators` is an R package that identifies U.S. state legislators referenced in text documents. It matches names using regular expressions and lookup tables, restricted by state, year (1969-2024), and chamber. Ambiguous matches (where multiple legislators share similar names) are automatically flagged instead of guessed.
+`statelegislators` is an R package that identifies U.S. state legislators referenced in text documents. It matches names using regular expressions and lookup tables, restricted by state, year (or year window), and chamber.
 
 ---
 
 ## Features
 
 - **Identify legislators from text** using regular expressions matching name variants.
+- **Connects identifiers from several datasets** which facilitates analysis of state legislator-level data.
 - **Constrain search by state, year, and chamber** for high-precision results.
 - **Flag ambiguous matches**—never silently guesses when two legislators have the same name.
-- **Support for both House and Senate** for all 50 states (1969–present). Note: some states in some years have incomplete data.
-- **Customizable matching pipeline** (optional: last-name-only matching).
+- **Support for both House and Senate** for all 50 states (1969–2024). Note: some states in some years have incomplete data.
+- **Customizable matching pipeline** (optional: last-name-only matching which may be appropriate for some data sources).
 - **Exported datasets**: `legis_people`, `legis_terms` for reproducible matching.
 
 ---
@@ -111,7 +112,7 @@ Found a bug? Want to contribute a new feature or typo correction table?
 
 ## License
 
-MIT License. See [LICENSE](LICENSE).
+MIT License.
 
 ---
 
@@ -119,7 +120,7 @@ MIT License. See [LICENSE](LICENSE).
 
 If you use this package in published work, please cite:
 
-> Nicholas Birdsong. statelegislators: Extract State Legislator Names from Messy Text. GitHub. 2024.
+> Nicholas Birdsong. statelegislators: Extract State Legislator Names from Text. GitHub. 2026.
 
 ---
 
