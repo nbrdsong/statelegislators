@@ -24,7 +24,7 @@
 
 ## Data Sources
 
-This package uses legislator metadata derived from:
+This package uses data from:
 
 - Klarner, Carl. 2018. *State Legislative Election Returns, 1967-2016*.
 - LegiScan
