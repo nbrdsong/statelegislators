@@ -16,7 +16,7 @@
 - **Connects identifiers from several datasets** which facilitates analysis of state legislator-level data.
 - **Constrain search by state, year, and chamber** for high-precision results.
 - **Flag ambiguous matches**—never silently guesses when two legislators have the same name.
-- **Support for both House and Senate** for all 50 states (1969–2024). Note: some states in some years have incomplete data.
+- **Support for all chambers** for all 50 states (1969–2024). Note: some states in some years have incomplete data.
 - **Customizable matching pipeline** (optional: last-name-only matching which may be appropriate for some data sources).
 - **Exported datasets**: `legis_people`, `legis_terms` for reproducible matching.
 
