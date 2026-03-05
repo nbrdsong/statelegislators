@@ -6,7 +6,7 @@
 
 ## Overview
 
-`statelegislators` is an R package that identifies U.S. state legislators referenced in text documents. It matches names using regular expressions and curated lookup tables, restricted by state, year (1969-2024), and chamber. Ambiguous matches (where multiple legislators share similar names) are automatically flagged instead of guessed.
+`statelegislators` is an R package that identifies U.S. state legislators referenced in text documents. It matches names using regular expressions and lookup tables, restricted by state, year (1969-2024), and chamber. Ambiguous matches (where multiple legislators share similar names) are automatically flagged instead of guessed.
 
 ---
 
